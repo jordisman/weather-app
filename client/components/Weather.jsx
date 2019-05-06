@@ -17,15 +17,6 @@ return (
       </p>
     }
     {
-      props.description &&
-      <p className="weather__key">
-        Conditions:
-        <span className="weather__value">
-          {props.description}
-        </span>
-      </p>
-    }
-    {
       props.temperature &&
       <p className="weather__key">
         Temperature:
@@ -40,6 +31,15 @@ return (
         Humidity:
         <span className="weather__value">
           {props.humidity}
+        </span>
+      </p>
+    }
+    {
+      props.description &&
+      <p className="weather__key">
+        Conditions:
+        <span className="weather__value">
+          {props.description}
         </span>
       </p>
     }

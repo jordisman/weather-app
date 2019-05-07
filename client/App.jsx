@@ -33,6 +33,9 @@ class App extends React.Component {
       console.log('res.data', res.data);
       this.setState({
         temperature: res.data.main.temp,
+        tempMax: res.data.main.temp_max,
+        tempMin: res.data.main.temp_min,
+        pressure: res.data.main.pressure,
         city: res.data.name,
         country: res.data.sys.country,
         humidity: res.data.main.humidity,
@@ -59,6 +62,9 @@ class App extends React.Component {
             <Form getWeather={this.getWeather} />
             <Weather
               temperature={this.state.temperature}
+              tempMax={this.state.tempMax}
+              tempMin={this.state.tempMin}
+              pressure={this.state.pressure}
               humidity={this.state.humidity}
               city={this.state.city}
               country={this.state.country}

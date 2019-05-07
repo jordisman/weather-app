@@ -50,6 +50,7 @@ class App extends React.Component {
         error: 'Please input values'
       })
     })
+    e.target.reset(); //nice resetting the input field!!
   }
 
   render() {
